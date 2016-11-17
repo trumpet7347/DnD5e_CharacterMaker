@@ -8,7 +8,8 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 
 const appRoutes: Routes = [
-  { path: '', component: CharacterMakerComponent}
+  { path: '', redirectTo: '/charactermaker', pathMatch: 'full'},
+  { path: 'charactermaker', component: CharacterMakerComponent}
 ];
 
 @NgModule({
